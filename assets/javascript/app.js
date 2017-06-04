@@ -1,13 +1,10 @@
       var animals = ["cow", "monkey", "dog", "cat"];
-      var animal = $("#movie-input").val();
-      http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC
+      var animal = $("#gif-input").val();
       var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&api_key=dc6zaTOxFJmzC";
       $(".button").click();
 
       // Function for displaying movie data
       function renderButtons() {
-        // Delete the content inside the movies-view div prior to adding new movies
-        // (this is necessary otherwise you will have repeat buttons)
         $("#animals-view").html(" ");
         // Loop through the array of movies, then generate buttons for each movie in the array
         for (var i = 0; i < animals.length; i++) {
