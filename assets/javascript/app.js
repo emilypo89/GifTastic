@@ -15,22 +15,22 @@
           method: "GET"
         }).done(function(response) {
           console.log(response);
-          $("#animals-view").html("<p>Rated: " + data[i].rating + "</p>");
-          $("#animals-view").append("<img scr='" + data[i].embeded-url + "' alt='" + animal[i] + "'poster'>");
+            $("#animals-view").html("<p>Rated: " + response.data[0].rating + "</p>");
+            $("#animals-view").append("<img src='" + response.data[0].url + "' alt='" + animal + "'>");
 
         });
         }
 
       // Function for displaying movie data
       function renderButtons() {
-        $("#animals-view").html(" ");
+        $("#buttons-view").html(" ");
         // Loops the array of animals and creates buttons for those animals
         for (var i = 0; i < animals.length; i++) {
            var button = $("<button>");
           button.addClass("button");
           button.attr("data-name", animals[i]);
           button.text(animals[i]);
-          $("#animals-view").append(button);
+          $("#buttons-view").append(button);
             }
       }
 
