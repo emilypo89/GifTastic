@@ -4,3 +4,30 @@ form,
 input {
   margin: 10px;
 }
+
+
+#gif-form {
+	/*float: right;*/
+}
+
+#animals-view {
+	/*float: left;*/
+}
+
+.gif {
+	width: 200px;
+	height: 300px;
+	/*float: left;*/
+}
+
+.gifDiv {
+	float: left;
+}
+
+#header {
+	padding-left: 20px;
+}
+
+.button {
+	
+}

@@ -13,24 +13,33 @@
 </head>
 
 <body>
+<div class="page-header" id="header">
+  <h1>Animal Gifs! <small>Type in an animal into the search bar and click the button to see 10 gifs!</small></h1>
+</div>
 
   <div class="container">
-    <h1>Animals Search</h1>
-
-    <!-- Movies will get dumped here -->
-    <div id="buttons-view"></div>
-
-
-    <form id="gif-form">
-      <label for="gif-input">Add a Gif</label>
-      <input type="text" id="gif-input">
-      <br>
-
-      <!-- Button triggers new movie to be added -->
-      <input id="add-gif" type="submit" value="Add a Gif">
-    </form>
-    <div id="animals-view"></div>
-      
+    <div class="row">
+      <div class="col-md-12">
+        <!-- Gif buttons will get dumped here -->
+        <div id="buttons-view"></div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- <div class="col-md-1"></div> -->
+      <div class="col-md-8">
+          <div id="animals-view"></div>
+      </div>
+      <div class="col-md-3">
+          <form id="gif-form">
+            <label for="gif-input">Add a Gif</label>
+            <input type="text" id="gif-input">
+            <br>
+            <!-- Button triggers new animal button to be added -->
+            <input id="add-gif" type="submit" value="Add a Gif">
+          </form>
+      </div>
+      <!-- <div class="col-md-1"></div> -->
+    </div>
   </div>
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>

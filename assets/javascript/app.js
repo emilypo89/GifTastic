@@ -1,4 +1,4 @@
-var animals = ["cow", "monkey", "dog", "cat"];
+var animals = ["cow", "monkey", "dog", "cat", "turtle", "tiger", "lizard", "bird", "mouse", "moose"];
 var animal = $("#gif-input").val();
 var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&api_key=dc6zaTOxFJmzC";
 $(".button").click();
@@ -24,9 +24,11 @@ function displayAnimal() {
     var stillImage = response.data[i].images.downsized_still.url;
     var rating = response.data[i].rating;
       
-
-      $("#animals-view").append("<p>Rated: " + rating + "</p>");
-      $("#animals-view").append("<img class='gif' src='" + stillImage + "' data-animate ='" + activeImage + "' data-still='" + stillImage + "'>");
+      var gifDiv = $("<div>");
+      gifDiv.attr("class", "gifDiv");
+      $("#animals-view").append(gifDiv);
+      $(gifDiv).append("<p>Rated: " + rating + "</p>");
+      $(gifDiv).append("<img class='gif' src='" + stillImage + "' data-animate ='" + activeImage + "' data-still='" + stillImage + "'>");
 
       $(".gif").on("click", function() {
         var state = $(this).attr("data-state");
