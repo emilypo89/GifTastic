@@ -13,10 +13,14 @@
         $.ajax({
           url: queryURL,
           method: "GET"
-        }).done(function(response) {
+        }).done(function(response) { 
+         
           console.log(response);
-            $("#animals-view").html("<p>Rated: " + response.data[0].rating + "</p>");
-            $("#animals-view").append("<img src='" + response.data[0].url + "' alt='" + animal + "'>");
+          for (var i = 0; i < 10; i++) {
+            $("#animals-view").append("<p>Rated: " + response.data[i].rating + "</p>");
+            $("#animals-view").append("<img src='" + response.data[i].url + "'>");
+          }
+
 
         });
         }
