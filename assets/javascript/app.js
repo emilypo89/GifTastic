@@ -1,16 +1,12 @@
 var animals = ["cow", "monkey", "dog", "cat", "turtle", "tiger", "lizard", "bird", "mouse", "moose"];
 var animal = $("#gif-input").val();
-var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&api_key=dc6zaTOxFJmzC";
+var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&api_key=dc6zaTOxFJmzC";
 
-// displayMovieInfo function re-renders the HTML to display the appropriate content
+// displayAnimalfunction re-renders the HTML to display the appropriate content
 function displayAnimal() {
 
-  var movie = $(this).attr("data-name");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + movie + "&limit=10&api_key=dc6zaTOxFJmzC";
 
-
-
-  // Creates AJAX call for the specific movie button being clicked
+  // Creates AJAX call for the specific animal button being clicked
   $.ajax({
     url: queryURL,
     method: "GET"
@@ -48,7 +44,7 @@ function displayAnimal() {
   });
   }
 
-// Function for displaying movie data
+// Function for displaying animal gif
 function renderButtons() {
   $("#buttons-view").html(" ");
   // Loops the array of animals and creates buttons for those animals
