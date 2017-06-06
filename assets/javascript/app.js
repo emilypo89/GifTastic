@@ -1,7 +1,6 @@
 var animals = ["cow", "monkey", "dog", "cat", "turtle", "tiger", "lizard", "bird", "mouse", "moose"];
 var animal = $("#gif-input").val();
 var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&api_key=dc6zaTOxFJmzC";
-$(".button").click();
 
 // displayMovieInfo function re-renders the HTML to display the appropriate content
 function displayAnimal() {
