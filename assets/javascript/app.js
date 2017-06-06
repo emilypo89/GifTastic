@@ -5,7 +5,7 @@ var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&a
 // displayAnimalfunction re-renders the HTML to display the appropriate content
 function displayAnimal() {
   animal = $(this).attr("data-name");
-  queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&api_key=dc6zaTOxFJmzC";
+  queryURL = "https://api.giphy.com/v1/gifs/search?q=" + animal + "&limit=10&api_key=dc6zaTOxFJmzC";
 
   // Creates AJAX call for the specific animal button being clicked
   $.ajax({
