@@ -6,13 +6,17 @@ input {
 }
 
 body {
-	/*font-family: 'Exo', sans-serif;*/
+	font-family: 'Exo', sans-serif;
 	background-color: #6999E8;
 }
 
 #gif-form {
 	border: solid 1px white;
 	padding: 5%;
+}
+
+#gifInput,
+label {
 	color: white;
 	font-weight: bold;
 }
