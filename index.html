@@ -8,13 +8,13 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-  
+  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
 
 </head>
 
 <body>
 <div class="page-header" id="header">
-  <h1>Animal Gifs! <small>Type in an animal into the search bar and click the button to see 10 gifs!</small></h1>
+  <h1>Animal Gifs! <small id="subHeader">Type in an animal into the search bar and click the button to see 10 gifs!</small></h1>
 </div>
 
   <div class="container">
@@ -26,7 +26,7 @@
     </div>
     <div class="row">
       <!-- <div class="col-md-1"></div> -->
-      <div class="col-md-8">
+      <div class="col-md-8" id="gifDisplay">
           <div id="animals-view"></div>
       </div>
       <div class="col-md-3">
@@ -35,7 +35,7 @@
             <input type="text" id="gif-input">
             <br>
             <!-- Button triggers new animal button to be added -->
-            <input id="add-gif" type="submit" value="Add a Gif">
+            <input id="add-gif" type="submit" value="Add a Gif" class="button">
           </form>
       </div>
       <!-- <div class="col-md-1"></div> -->

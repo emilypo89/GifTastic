@@ -5,17 +5,26 @@ input {
   margin: 10px;
 }
 
-
-#gif-form {
-	/*float: right;*/
+body {
+	font-family: 'Exo', sans-serif;
+	background-color: #6999E8;
 }
 
-#animals-view {
-	/*float: left;*/
+#gif-form {
+	border: solid 1px white;
+	padding: 5%;
+	color: white;
+	font-weight: bold;
+}
+
+#gifDisplay{
+	border: solid 1px white;
+	color: white;
+	font-weight: bold;
 }
 
 .gif {
-	width: 200px;
+	width: 215px;
 	height: 300px;
 	/*float: left;*/
 }
@@ -25,9 +34,22 @@ input {
 }
 
 #header {
+	height: 100%;
 	padding-left: 20px;
+	margin-top: 0;
+	padding-top: 20px;
+	background-color: #420CE8;
+	color: white;
+}
+
+#subHeader {
+	color: white;
 }
 
 .button {
-	
+	background-color: #420CE8;
+	color: white;
+	border: solid 1px #420CE8;
+	padding: 1% 2% 1% 2%;
+	font-weight: bold;
 }
