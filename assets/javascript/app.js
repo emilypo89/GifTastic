@@ -26,7 +26,7 @@ function displayAnimal() {
       $(gifDiv).append("<p>Rated: " + rating + "</p>");
       $(gifDiv).append("<img class='gif' src='" + stillImage + "' data-animate ='" + activeImage + "' data-still='" + stillImage + "'>");
 
-      $(".gif").on("click", function() {
+      $(document).on("click", ".gif", function() {
         var state = $(this).attr("data-state");
         console.log(state);
 
