@@ -7,7 +7,7 @@ input {
 
 body {
 	font-family: 'Exo', sans-serif;
-	background-color: #6999E8;
+	background-color: #6B7A8F;
 }
 
 #gif-form {
@@ -17,7 +17,7 @@ body {
 
 #gif-input,
 label {
-	color: white;
+	color: #6B7A8F;
 	font-weight: bold;
 }
 
@@ -43,7 +43,7 @@ label {
 	padding-left: 20px;
 	margin-top: 0;
 	padding-top: 20px;
-	background-color: #420CE8;
+	background-color: #F7882F;
 	color: white;
 }
 
@@ -53,9 +53,9 @@ label {
 
 .button,
 #add-gif {
-	background-color: #420CE8;
+	background-color: #F7C331;
 	color: white;
-	border: solid 1px #420CE8;
+	border: solid 1px #F7C331;
 	padding: 1% 2% 1% 2%;
 	font-weight: bold;
 	width: fit-content;
