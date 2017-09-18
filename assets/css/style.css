@@ -15,10 +15,13 @@ body {
 	padding: 5%;
 }
 
-#gif-input,
-label {
+#gif-input {
 	color: #6B7A8F;
 	font-weight: bold;
+}
+
+label {
+	color: white;
 }
 
 #gifDisplay{
