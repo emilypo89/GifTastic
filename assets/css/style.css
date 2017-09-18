@@ -28,9 +28,10 @@ label {
 }
 
 .gif {
-	width: 215px;
+	width: 300px;
 	height: 300px;
-	/*float: left;*/
+	margin-left: 30px;
+	border: solid 5px white;
 }
 
 .gifDiv {
