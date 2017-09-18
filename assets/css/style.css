@@ -11,18 +11,18 @@ body {
 }
 
 #gif-form {
-	border: solid 1px white;
+	border: solid 5px white;
 	padding: 5%;
 }
 
-#gifInput,
+#gif-input,
 label {
 	color: white;
 	font-weight: bold;
 }
 
 #gifDisplay{
-	border: solid 1px white;
+	border: solid 5px white;
 	color: white;
 	font-weight: bold;
 }
@@ -51,10 +51,12 @@ label {
 	color: white;
 }
 
-.button {
+.button,
+#add-gif {
 	background-color: #420CE8;
 	color: white;
 	border: solid 1px #420CE8;
 	padding: 1% 2% 1% 2%;
 	font-weight: bold;
+	width: fit-content;
 }
